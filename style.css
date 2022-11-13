@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  width: 100%;
+}
+/* nav styling */
+.navbar {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.5s;
+}
+.navbar-stky {
+  padding: 10px 0;
+  background-color: crimson;
+}
+.navbar .max-width {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.max-width {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu {
+  display: flex;
+  transition: all 1s;
+}
+.menu li {
+  margin: 0 10px;
+  list-style: none;
+  /* transition: all 0.05s ease-in-out; */
+}
+.menu li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+.menu li .a:hover {
+  color: crimson;
+}
+.menu li .aColer:hover {
+  color: #fff;
+}
+.bargar i {
+  font-size: 20px;
+  color: #fff;
+}
+.bargar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    background: crimson;
+    height: 100vh;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    transform: translateX(101%);
+  }
+  .bargar {
+    display: block;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 464px) {
+  .home {
+    width: 100% !important;
+  }
+  .bargar {
+    display: block;
+  }
+}
+.show-nav {
+  transform: translateX(0);
+}
+/* home section style */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./img/background.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+.lair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.801);
+}
+.home-content .text-1 {
+  font-size: 27px;
+}
+.home-content .text-2 {
+  font-size: 75px;
+  font-weight: 600;
+}
+.home-content .text-3 {
+  font-size: 40px;
+}
+.home-content .text-3 span {
+  color: crimson;
+}
+.hireBtn {
+  border: 3px solid crimson;
+  background: transparent;
+  transition: all 0.5s;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.hireBtn a,
+.hireBtn a i {
+  color: rgb(255, 255, 255);
+}
+.hireBtn:hover {
+  background: crimson;
+}
+@media screen and (max-width: 464px) {
+  .home-content .text-1 {
+    font-size: 25px;
+  }
+  .home-content .text-2 {
+    font-size: 43px;
+    font-weight: 600;
+  }
+  .home-content .text-3 {
+    font-size: 33px;
+  }
+}
+/* about */
+
+.about {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif;
+  background: black;
+  color: #fff;
+  padding-bottom: 50px;
+}
+.about .max-width {
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  margin-top: 50px;
+}
+.about-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.about-content .left {
+  flex: 1;
+}
+.about-content .right {
+  flex: 1;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right h1 span {
+  color: crimson;
+}
+.about-content .left img {
+  width: 60%;
+  border-radius: 50%;
+}
+.about .max-width h1 {
+  margin: 10px 0;
+}
+.about .max-width .h1::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  background: crimson;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1965px) {
+  .about-content .right h1 {
+    font-size: 60px;
+  }
+  .about-content .right p {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about-content .right h1 {
+    font-size: 40px;
+  }
+  .about-content .right p {
+    font-size: 16px;
+  }
+}
+/* service */
+.setvice {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: black;
+  padding: 50px 0;
+  border-top: 0.5px solid rgb(27, 27, 27);
+}
+.setvice .max-width {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 250px;
+  margin: 10px;
+  background: rgb(20, 20, 20);
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: 10px;
+  text-align: center;
+}
+.card div i {
+  font-size: 40px;
+  color: crimson;
+  margin-bottom: 5px;
+}
+.card h2 {
+  margin: 10px 0;
+  font-size: 30px;
+}
+.card:hover {
+  background: crimson;
+  transform: scale(1.08);
+}
+.card:hover div i {
+  color: #fff;
+}
+.setvice h1 {
+  width: 200px;
+  text-align: center;
+}
+.setvice h1::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  background: crimson;
+  margin: 5px 0 10px 0;
+}
+/* skill */
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: black;
+  color: #fff;
+  border-top: 1px solid rgb(31, 31, 31);
+  font-family: "Ubuntu", sans-serif;
+}
+.skills .max-width {
+  flex-direction: column;
+  padding: 50px 0;
+}
+.skills .max-width .skill-content {
+  display: flex;
+}
+.skills .skill-content .left {
+  flex: 1;
+  width: 100%;
+}
+.skills .skill-content .right {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.skills .skill-content .right .schill {
+  width: 90%;
+  height: 20px;
+  background: rgb(43, 43, 43);
+  display: block;
+}
+.skills .max-width .h1 {
+  text-align: center;
+}
+.skills .max-width .h1::after {
+  content: "";
+  width: 200px;
+  height: 5px;
+  display: block;
+  background: crimson;
+  margin: 30px 0 10px 0;
+}
+.schill .html,
+.css,
+.JavaScript,
+.React {
+  height: 100%;
+  background: crimson;
+  padding-left: 5px;
+  display: block;
+}
+.schill .html {
+  width: 90%;
+  height: 100%;
+  background: crimson;
+  display: block;
+  animation: skillAnimi 1s;
+}
+.schill .css {
+  width: 70%;
+  height: 100%;
+  background: crimson;
+  display: block;
+  animation: skillAnimi 1s;
+}
+.schill .JavaScript {
+  width: 75%;
+  height: 100%;
+  background: crimson;
+  display: block;
+  animation: skillAnimi 1s ease;
+}
+.schill .React {
+  width: 50%;
+  height: 100%;
+  background: crimson;
+  display: block;
+  animation: skillAnimi 1s;
+}
+@keyframes skillAnimi {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills .max-width .skill-content {
+    flex-direction: column;
+  }
+  .skills .skill-content .right {
+    margin: 20px 0;
+  }
+}
+/* contact */
+input,
+textarea {
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: #fff;
+  padding: 40px 0;
+  border-top: 1px solid rgb(20, 20, 20);
+}
+.contact .max-width {
+  display: flex;
+  justify-content: center;
+}
+input[type="email"],
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid crimson;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: crimson;
+}
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: #fff;
+  padding: 5px 0;
+  border-top: 1px solid rgb(22, 22, 22);
+}
+.footer .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
